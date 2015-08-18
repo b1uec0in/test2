@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MOML>
     <THEMES>
-        <THEME id="style1" style="round" />
+        <THEME id="style1" style="round" padding="10,5" margin="3" />
     </THEMES>
     <UILAYOUT portrait="320,460" landscape="320,460">
         <WINDOW layout="0,0,320,460" defaultImg="#ffffff">
