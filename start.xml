@@ -13,7 +13,7 @@
                 <STYLEBUTTON themeId="style1" text="close" img="lightblue" onClick="cam.close"/>
                 <STYLEBUTTON themeId="style1" text="front" img="lightred" onClick="cam.type='front'"/>
                 <STYLEBUTTON themeId="style1" text="back" img="#80a0ff" onClick="cam.type='back'"/>
-            </WINDOW>
+            </WINDOW> 
         </WINDOW>
     </UILAYOUT>
     
