@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MOML>
+    <THEMES>
+        <THEME id="style1" style="round" />
+    </THEMES>
     <UILAYOUT portrait="320,460" landscape="320,460">
         <WINDOW layout="0,0,320,460" defaultImg="#ffffff">
             <LABEL id="label1" layout="10,10,auto,auto" text="Hello MOML" />
             <!--<WEBVIEW layout="10,40,300,300" src="http://naver.com" controls="none"/>-->
             <CAMERA id="cam" layout="10,40,300,300" />
             <WINDOW layout="10,350,300,auto" align="linear">
-                <BUTTON text="close" onClick="cam.close"/>
+                <STYLEBUTTON themeId="style1" text="close" onClick="cam.close"/>
             </WINDOW>
         </WINDOW>
     </UILAYOUT>
