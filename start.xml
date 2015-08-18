@@ -19,6 +19,6 @@
     
     <CMD cmd="xml = file.read('http://api.openweathermap.org/data/2.5/weather?mode=xml&amp;units=metric&amp;q=Seoul')"/>
     <CMD cmd="temperature = xpath.evaluateEx(xml, '/current/temperature/@value')" />
-    <CMD cmd="label1.text='현재 온도: ' + temperature"/>
+    <CMD cmd="label1.text='현재 온도 : ' + temperature"/>
 
 </MOML>
