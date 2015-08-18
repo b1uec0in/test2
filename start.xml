@@ -2,7 +2,7 @@
 <MOML>
     <UILAYOUT portrait="320,460" landscape="320,460">
         <WINDOW layout="0,0,320,460" defaultImg="#ffffff">
-            <LABEL layout="10,10,auto,auto" text="Hello MOML" />
+            <LABEL id="label1" layout="10,10,auto,auto" text="Hello MOML" />
             <!--<WEBVIEW layout="10,40,300,300" src="http://naver.com" controls="none"/>-->
             <CAMERA id="cam" layout="10,40,300,300" />
             <WINDOW layout="10,350,300,auto" align="linear">
@@ -10,4 +10,9 @@
             </WINDOW>
         </WINDOW>
     </UILAYOUT>
+    
+    <CMD cmd="xml = file.read('http://api.openweathermap.org/data/2.5/weather?mode=xml&amp;units=metric&amp;q=Seoul‘)"/>
+    <CMD cmd="temperature = xpath.evaluateEx(xml, '/current/temperature/@value')" />
+    <CMD cmd="label1.text='현재 온도' + temperature/>
+
 </MOML>
