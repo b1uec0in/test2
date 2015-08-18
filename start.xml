@@ -9,7 +9,10 @@
             <!--<WEBVIEW layout="10,40,300,300" src="http://naver.com" controls="none"/>-->
             <CAMERA id="cam" layout="10,40,300,300" />
             <WINDOW layout="10,350,300,auto" align="linear">
-                <STYLEBUTTON themeId="style1" text="close" onClick="cam.close"/>
+                <STYLEBUTTON themeId="style1" text="close" img="green" onClick="cam.open"/>
+                <STYLEBUTTON themeId="style1" text="close" img="blue" onClick="cam.close"/>
+                <STYLEBUTTON themeId="style1" text="close" img="red" onClick="cam.type='front'"/>
+                <STYLEBUTTON themeId="style1" text="close" img="#80a0ff" onClick="cam.type='back'"/>
             </WINDOW>
         </WINDOW>
     </UILAYOUT>
